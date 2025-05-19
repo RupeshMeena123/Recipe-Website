@@ -166,7 +166,7 @@ main{
 @media (max-width: 600px) {
   #Navlist {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #name {
