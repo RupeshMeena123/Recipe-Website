@@ -87,13 +87,13 @@ main{
     background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#item1{
+/* #item1{
     display: flex;
     gap: 4px;
-    background: #E0EAFC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background: #E0EAFC;  
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+} */
 #contentbox{
     margin: 5px;
     padding: 10px; 
@@ -171,18 +171,32 @@ main{
 
   #name {
     font-size: 2rem;
+    text-align: center;
   }
 
-  #HCA {
+   #HCA {
     flex-direction: column;
-    gap: 5px;
-    font-size: 1.2rem;
+    gap: 8px;
+    font-size: 1.1rem;
+    text-align: center;
   }
+  #seconddiv{
+    display: flex;
+    flex-direction: column;
+}
 
-  #item1 , #item2 , #item3 , #item4 , #item5 , #item6 , #item7 , #item8{
+  #item1 ,
+  #item2
+  ,#item3
+  ,#item4
+  ,#item5
+  ,#item6
+  ,#item7
+  ,#item8  
+   {
     flex-direction: row;
-    flex-wrap: wrap;  }
-
+    flex-wrap: wrap;
+  }
   #contentbox,
   #tip {
     width: 100%;
@@ -210,7 +224,15 @@ main{
     gap: 10px;
   }
 
-  #item1 {
+  #item1 ,
+  #item2
+  ,#item3
+  ,#item4
+  ,#item5
+  ,#item6
+  ,#item7
+  ,#item8  
+   {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -234,9 +256,9 @@ main{
     flex-direction: row;
   }
 
-  #item1 {
+  /* #item1 {
     flex-direction: row;
-  }
+  } */
 
   #contentbox {
     width: 70%;
