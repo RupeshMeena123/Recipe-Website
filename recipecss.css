@@ -174,7 +174,7 @@ main{
     text-align: center;
   }
 
-   #HCA {
+ #HCA {
     flex-direction: column;
     gap: 8px;
     font-size: 1.1rem;
