@@ -1,0 +1,307 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Body Styling */
+body {
+    background-image: linear-gradient(135deg, #5EFCE8 10%, #736EFE 100%);
+   
+}
+/* Outermost Container */
+#Outermostdiv {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    color: #333333;
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+   
+}
+
+/* Header / Uppermost Division */
+#uppermostdiv {
+    width: 100vw;
+    min-width: 80px;
+    height: 100px;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+/* Navigation List */
+#Navlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 5px;
+    list-style: none;
+}
+
+#name {
+    font-size: 2.8rem;
+    color: azure;
+}
+
+#HCA {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: azure;
+}
+
+#HCA a {
+    color: azure;
+    text-decoration: none;
+}
+
+/* Main Content Area */
+#seconddiv {
+    width: 95%;
+    margin: auto;
+    padding: 1px;
+    /* background-color: #f8f9fa; */
+    display: flex;
+    flex-direction: column;
+}
+#image1{
+    margin: 0 auto;
+    margin-top: 30px;
+    max-height: 450px;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(114, 89, 137, 0.388);
+    background-size: coverS;
+}
+
+
+#welcome-section {
+ 
+
+    padding: 40px;
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+    color: #000; 
+    
+}
+
+/* ABout us    */
+#thirddiv{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-height: fit-content;
+    max-height: 200px;
+    color: #333333;
+    font-size: 1.2rem;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+ #about h2{
+
+    text-align: center;
+    text-decoration: underline;
+ }
+#contact h2{
+    text-align: center;
+    text-decoration: underline;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-height: fit-content;
+    max-height: 200px;
+    color: #333333;
+    font-size: 1.2rem;
+    justify-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    min-width: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    box-shadow: #9599E2 0px 10px 10px;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+.explore-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.explore-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+}
+#contact, #thirddiv {
+    padding: 40px 20px;
+    width: 80%;
+    margin: auto;
+}
+.image{
+    margin: 0 auto;
+    width: 800px;
+    height: fit-content;
+    align-self: center;
+    opacity: calc(0.8);
+}
+/* Extra Small Devices - Mobile Phones */
+@media (max-width: 600px) {
+  #name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #HCA {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #Navlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #image1,
+  .image {
+    width: 90%;
+  }
+
+  #welcome-section {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  #about,
+  #contact {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  .explore-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* Medium Devices - Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #name {
+    font-size: 2.4rem;
+  }
+
+  #HCA {
+    gap: 12px;
+    font-size: 1.3rem;
+  }
+
+  #image1,
+  .image {
+    width: 85%;
+  }
+
+  #welcome-section {
+    padding: 30px;
+    font-size: 1.1rem;
+  }
+
+  #about,
+  #contact {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .explore-button {
+    padding: 10px 18px;
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+/* Large Devices - Laptops & Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #name {
+    font-size: 2.8rem;
+  }
+
+  #HCA {
+    flex-direction: row;
+    font-size: 1.5rem;
+  }
+
+  #about,
+  #contact {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  #image1,
+  .image {
+    width: 70%;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra Large Devices - Big Monitors */
+@media (min-width: 1441px) {
+  #about,
+  #contact,
+  #welcome-section {
+    width: 60%;
+  }
+
+  #image1,
+  .image {
+    width: 60%;
+  }
+
+  .explore-button {
+    font-size: 1.3rem;
+  }
+}
